@@ -6,11 +6,11 @@
    - Go to the [Azure portal](https://portal.azure.com/).
 
 2. **Navigate to Azure Active Directory**:
-   - In the left-hand navigation pane, select **Azure Active Directory**.
+   - In the row of icons at the top, select **Microsoft Entra ID**.
 
 3. **Register a new application (API)**:
-   - Select **App registrations**.
-   - Click on **New registration**.
+   - Click "+Add" at the top
+   - Click on **App Registration**.
    - Enter a **Name** for the API.
    - Choose the **Supported account types** that apply to your scenario.
    - Enter a **Redirect URI** (optional for now, you can set it later if needed).
@@ -20,8 +20,8 @@
 
 1. **Expose an API**:
    - After registering the API, you'll be redirected to the app's overview page.
-   - In the left-hand menu, select **Expose an API**.
-   - Click on **Add a scope**.
+   - In the left-hand menu, click **Manage**, which will open more options. In the new list of options, click **Expose An API**
+   - Click on **+Add a scope**.
    - If prompted, click **Save and continue** to set the Application ID URI.
    - Define the scope's details:
      - **Scope name**: For example, `access_as_user`.
@@ -61,7 +61,7 @@
    - Copy the **Application (client) ID** of the client application. This is your Client ID.
 
 2. **Create a Client Secret**:
-   - In the left-hand menu, select **Certificates & secrets**.
+   - At the top right corner, click into **Certificates & secrets**.
    - Under **Client secrets**, click on **New client secret**.
    - Add a description and set an expiration period.
    - Click **Add**.
